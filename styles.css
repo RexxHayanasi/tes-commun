@@ -1,0 +1,117 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+/* Background styling */
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://pomf2.lain.la/f/c9zq0ae0.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Content styling */
+.content {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Atur untuk memulai dari atas */
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.9;
+    padding-top: 20px; /* Tambahkan padding untuk memberi jarak dari atas */
+}
+
+.header span {
+    font-size: 1.2em;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* Character styling */
+.character {
+    position: absolute;
+    bottom: 30%; /* Atur posisi karakter lebih ke tengah */
+    left: 50%; /* Pusatkan horizontal */
+    transform: translate(-50%, 50%); /* Pusatkan secara vertikal dan horizontal */
+}
+
+.character img {
+    max-height: 50vh; /* Ukuran karakter disesuaikan */
+    width: auto;
+    opacity: 0.95;
+}
+
+/* Button styling */
+.intro-button {
+    margin-bottom: 10px; /* Menggunakan margin bawah untuk memisahkan dari karakter */
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.intro-button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Character info styling */
+.character-info {
+    position: absolute; /* Ubah ke absolute untuk menempatkan di bawah karakter */
+    bottom: 25%; /* Atur jarak dari bawah */
+    left: 50%; /* Pusatkan horizontal */
+    transform: translateX(-50%); /* Pusatkan secara horizontal */
+    text-align: center; /* Pusatkan teks */
+    width: 100%; /* Memastikan lebar 100% */
+}
+
+/* Info background with gradient */
+.info-background {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1));
+    padding: 15px; /* Sesuaikan padding */
+    border-radius: 10px;
+    width: 80%; /* Lebar disesuaikan */
+    margin: 0 auto; /* Pusatkan info background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Tambahkan efek bayangan jika perlu */
+}
+
+.info-background h2 {
+    font-size: 1.8em; /* Ukuran h2 disesuaikan */
+    font-weight: bold;
+}
+
+.info-background p {
+    font-size: 1em;
+    margin-top: 5px;
+    opacity: 0.9;
+    color: #ffffff;
+}
